@@ -1,0 +1,15 @@
+server:
+  port: 8100
+  servlet:
+    context-path: /employee-service
+
+spring:
+  application:
+    name: employee-service
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://localhost:8770/eureka/

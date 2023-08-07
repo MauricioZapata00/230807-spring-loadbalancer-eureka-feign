@@ -1,0 +1,15 @@
+server:
+  port: 8101
+  servlet:
+    context-path: /address-service
+
+spring:
+  application:
+    name: address-service
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://localhost:8770/eureka/
